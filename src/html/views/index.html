@@ -1,0 +1,238 @@
+<% var data = {
+  title: "Menu-menu",
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+<main>
+  <section class="hero">
+    <div class="hero_container container">
+      <div class="row">
+        <div class="breadcrumbs">
+          <span class="breadcrumbs_item">Доставка еды</span>
+          <span class="breadcrumbs_item">Минск</span>
+          <span class="breadcrumbs_item">Суши</span>
+        </div>
+        <div class="hero_text">
+          <h1 class="hero_text_title">Доставка суши и роллов в Минске</h1>
+          <p class="hero_text_description">Укажите ваше местоположение, чтобы мы смогли предложить вас список доступных ресторанов</p>
+        </div>
+
+        <div class="hero_button_container">
+          <div class="hero_button">Укажите адрес</div>
+        </div>
+
+        <div class="hero_input_container">
+          <input class="hero_input" placeholder="Поиск ресторана, блюда..." />
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="categories">
+    <div class="categories_container">
+      <div class="row">
+        <div class="categories_list">
+          <div class="categories_item">
+              <a class="categories_item_link" href="/">
+                <img class="categories_item_img " data-src="/images/category_icons/sushi1.png" alt="" src="/"/>
+                <div class="categories_item_text">Все</div>
+              </a>
+          </div>
+          <div class="categories_item">
+              <a class="categories_item_link" href="/">
+                <img class="categories_item_img " data-src="/images/category_icons/sushi1.png" alt="" src="/"/>
+                <div class="categories_item_text">Суши</div>
+              </a>
+          </div>
+          <div class="categories_item">
+              <a class="categories_item_link" href="/">
+                <img class="categories_item_img " data-src="/images/category_icons/sushi1.png" alt="" src="/"/>
+                <div class="categories_item_text">Бургеры</div>
+              </a>
+          </div>
+          <div class="categories_item">
+              <a class="categories_item_link" href="/">
+                <img class="categories_item_img " data-src="/images/category_icons/sushi1.png" alt="" src="/"/>
+                <div class="categories_item_text">Все</div>
+              </a>
+          </div>
+          <div class="categories_item">
+              <a class="categories_item_link" href="/">
+                <img class="categories_item_img " data-src="/images/category_icons/sushi1.png" alt="" src="/"/>
+                <div class="categories_item_text">Суши</div>
+              </a>
+          </div>
+          <div class="categories_item">
+              <a class="categories_item_link" href="/">
+                <img class="categories_item_img " data-src="/images/category_icons/sushi1.png" alt="" src="/"/>
+                <div class="categories_item_text">Бургеры</div>
+              </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sales">
+    <div class="section_title">
+      Акции
+    </div>
+    <div class="sales_container">
+      <div class="row">
+        <div class="sales_list">
+
+          <div class="restaraunt_item">
+            <div class="restaraunt_item_wrapper">
+              <div class="restaraunt_item_bg"></div>
+              <div class="restaraunt_item_options">
+                <span class="restaraunt_item_options_type">подарок</span>
+                <span class="restaraunt_item_options_rate">рейтинг</span>
+              </div>
+            </div>
+            <div class="restaraunt_item_text">
+              <div class="restaraunt_item_text_title">Название</div>
+              <div class="restaraunt_item_text_info">
+                <span class="restaraunt_item_text_info_time">
+                  ~45мин
+                </span>
+                <span class="restaraunt_item_text_info_cost">
+                  заказ от 0 руб.
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="restaraunt_item">
+            <div class="restaraunt_item_wrapper">
+              <div class="restaraunt_item_bg"></div>
+              <div class="restaraunt_item_options">
+                <span class="restaraunt_item_options_type">подарок</span>
+                <span class="restaraunt_item_options_rate">рейтинг</span>
+              </div>
+            </div>
+            <div class="restaraunt_item_text">
+              <div class="restaraunt_item_text_title">Название</div>
+              <div class="restaraunt_item_text_info">
+                <span class="restaraunt_item_text_info_time">
+                  ~45мин
+                </span>
+                <span class="restaraunt_item_text_info_cost">
+                  заказ от 0 руб.
+                </span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="restaraunts">
+    <div class="section_title">
+      Все рестораны
+    </div>
+    <div class="restaraunts_container">
+      <div class="row">
+        <div class="restaraunts_list">
+          <div class="restaraunt_item">
+            <div class="restaraunt_item_wrapper">
+              <div class="restaraunt_item_bg"></div>
+              <div class="restaraunt_item_options">
+                <!-- <span class="restaraunt_item_options_type">подарок</span> -->
+                <span class="restaraunt_item_options_rate">рейтинг</span>
+              </div>
+            </div>
+            <div class="restaraunt_item_text">
+              <div class="restaraunt_item_text_title">Название</div>
+              <div class="restaraunt_item_text_info">
+                <span class="restaraunt_item_text_info_time">
+                  ~45мин
+                </span>
+                <span class="restaraunt_item_text_info_cost">
+                  заказ от 0 руб.
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="restaraunt_item">
+            <div class="restaraunt_item_wrapper">
+              <div class="restaraunt_item_bg"></div>
+              <div class="restaraunt_item_options">
+                <!-- <span class="restaraunt_item_options_type">подарок</span> -->
+                <span class="restaraunt_item_options_rate">рейтинг</span>
+              </div>
+            </div>
+            <div class="restaraunt_item_text">
+              <div class="restaraunt_item_text_title">Название</div>
+              <div class="restaraunt_item_text_info">
+                <span class="restaraunt_item_text_info_time">
+                  ~45мин
+                </span>
+                <span class="restaraunt_item_text_info_cost">
+                  заказ от 0 руб.
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="restaraunt_item">
+            <div class="restaraunt_item_wrapper">
+              <div class="restaraunt_item_bg"></div>
+              <div class="restaraunt_item_options">
+                <!-- <span class="restaraunt_item_options_type">подарок</span> -->
+                <span class="restaraunt_item_options_rate">рейтинг</span>
+              </div>
+            </div>
+            <div class="restaraunt_item_text">
+              <div class="restaraunt_item_text_title">Название</div>
+              <div class="restaraunt_item_text_info">
+                <span class="restaraunt_item_text_info_time">
+                  ~45мин
+                </span>
+                <span class="restaraunt_item_text_info_cost">
+                  заказ от 0 руб.
+                </span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="restaraunt_item">
+            <div class="restaraunt_item_wrapper">
+              <div class="restaraunt_item_bg"></div>
+              <div class="restaraunt_item_options">
+                <!-- <span class="restaraunt_item_options_type">подарок</span> -->
+                <span class="restaraunt_item_options_rate">рейтинг</span>
+              </div>
+            </div>
+            <div class="restaraunt_item_text">
+              <div class="restaraunt_item_text_title">Название</div>
+              <div class="restaraunt_item_text_info">
+                <span class="restaraunt_item_text_info_time">
+                  ~45мин
+                </span>
+                <span class="restaraunt_item_text_info_cost">
+                  заказ от 0 руб.
+                </span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<section class="functional">
+  <div class="current_category">
+    <div class="current_category_text">Суши <span class="close">×</span></div>
+  </div>
+</section>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>
