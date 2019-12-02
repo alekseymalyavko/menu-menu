@@ -5,7 +5,9 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
+// const jquery = require("jquery");
 const autoprefixer = require('autoprefixer');
+// const tooltipster = require('tooltipster');
 
 function generateHtmlPlugins(templateDir) {
   const templateFiles = fs.readdirSync(path.resolve(__dirname, templateDir));
@@ -26,6 +28,7 @@ const htmlPlugins = generateHtmlPlugins("./src/html/views");
 const config = {
   entry: ["./src/js/index.js", "./src/scss/style.scss"],
   output: {
+    // library: tooltipster,
     filename: "./js/bundle.js"
   },
   devtool: "source-map",
@@ -82,6 +85,10 @@ const config = {
     ]
   },
   plugins: [
+    // new webpack.ProvidePlugin({
+    //   $: 'jquery',
+    //   jQuery: 'jquery'
+    // }),
     new MiniCssExtractPlugin({
       filename: "./css/style.bundle.css"
     }),

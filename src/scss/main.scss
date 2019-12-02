@@ -1,0 +1,21 @@
+$font-stack: -apple-system, BlinkMacSystemFont, Roboto, "Open Sans", "Helvetica Neue", sans-serif;
+$coral-color: #e4424b;
+$white-color: #fff;
+$yellow-color: #fee033;
+$light-grey-color: silver;
+$dark-grey-color: #75736F;
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+
+body {
+  font-family: $font-stack;
+}
+
+a {
+  color: inherit;
+}

@@ -1,0 +1,22 @@
+
+.header {
+  background: $coral-color;
+  // min-height: 90px;
+  color: $white-color;
+  
+  &_container {
+
+    & .row {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0;
+      min-height: 60px;
+      font-size: 21px;
+    }
+  }
+
+  &_number {
+    font-size: 25px;
+    margin: 0 auto;
+  }
+}
