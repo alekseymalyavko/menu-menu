@@ -10,6 +10,7 @@
     "build": "webpack --mode production && prettier --print-width=120 --parser html --write dist/*.html"
   },
   "dependencies": {
+    "autoprefixer": "^9.7.3",
     "jquery": "^3.4.1",
     "materialize-css": "^1.0.0"
   },

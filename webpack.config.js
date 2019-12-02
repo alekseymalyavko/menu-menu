@@ -5,6 +5,7 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
+const autoprefixer = require('autoprefixer');
 
 function generateHtmlPlugins(templateDir) {
   const templateFiles = fs.readdirSync(path.resolve(__dirname, templateDir));
@@ -55,22 +56,14 @@ const config = {
             }
           },
           {
-            loader: "postcss-loader",
+            loader: 'postcss-loader',
             options: {
-              ident: "postcss",
-              sourceMap: true,
-              plugins: () => [
-                require("cssnano")({
-                  preset: [
-                    "default",
-                    {
-                      discardComments: {
-                        removeAll: true
-                      }
-                    }
-                  ]
-                })
-              ]
+                plugins: [
+                    autoprefixer({
+                        browsers:['ie >= 8', 'last 4 version']
+                    })
+                ],
+                sourceMap: true
             }
           },
           {

@@ -1,4 +1,9 @@
 $font-stack: -apple-system, BlinkMacSystemFont, Roboto, "Open Sans", "Helvetica Neue", sans-serif;
+$coral-color: #e4424b;
+$white-color: #fff;
+$yellow-color: #fee033;
+$light-grey-color: silver;
+$dark-grey-color: #75736F;
 
 @font-face {
   font-family: "Roboto";
@@ -7,20 +12,16 @@ $font-stack: -apple-system, BlinkMacSystemFont, Roboto, "Open Sans", "Helvetica 
   src: url(../fonts/Roboto-Regular.ttf);
 }
 
-:root {
-  --coral-color: #e4424b;
-  --white-color: #fff;
-  --yellow-color: #fee033;
-  --light-grey-color: silver;
-  --dark-grey-color: #75736F;
-}
-
 body {
   font-family: $font-stack;
 }
 
+a {
+  color: inherit;
+}
+
 .section_title {
-  color: var(--dark-grey-color);
+  color: $dark-grey-color;
   padding: 8px 16px;
   display: flex;
   font-size: 13px;
@@ -32,9 +33,9 @@ body {
 
 
 .header {
-  background: var(--coral-color);
+  background: $coral-color;
   // min-height: 90px;
-  color: var(--white-color);
+  color: $white-color;
   
   &_container {
 
@@ -52,6 +53,9 @@ body {
     margin: 0 auto;
   }
 }
+
+
+
 .hero {
 
   &_text {
@@ -65,7 +69,7 @@ body {
     }
 
     &_description {
-      color: var(--light-grey-color);
+      color: $light-grey-color;
       font-size: 12px;
       line-height: 1.67;
       margin: 10px 0;
@@ -76,7 +80,7 @@ body {
     width: 250px;
     height: 40px;
     margin: 0 auto;
-    background: var(--yellow-color);
+    background: $yellow-color;
     border-radius: 30px;
     display: flex;
     align-items: center;
@@ -146,7 +150,7 @@ body {
     }
 
     &_text {
-      color: var(--light-grey-color);
+      color: $light-grey-color;
       margin-top: 5px;
       height: 16px;
       display: block;
@@ -262,7 +266,7 @@ body {
 
 .breadcrumbs {
   margin: 10px 0;
-  color: var(--light-grey-color);
+  color: $light-grey-color;
   padding-bottom: 6px;
 
   &_item {
