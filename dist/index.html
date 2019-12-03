@@ -16,9 +16,10 @@
 </head>
 <body>
   <header class="header">
-    <div class="header_container container">
+    <div class="container">
       <div class="row">
-        <div class="header_mobile">
+        
+        <div class="header_content mobile">
             <div class="header_icon">
               <span>
                 <i class="fa fa-bars" aria-hidden="true"></i>
@@ -34,19 +35,21 @@
               </span>
             </div>
         </div>
-        <div class="header">
+
+        <div class="header_content">
             <div class="header_logo">
               <span>
-                <i class="fa fa-bars" aria-hidden="true"></i>
+                <i class="fa fa-font-awesome" aria-hidden="true"></i>
               </span>
             </div>
             <div class="header_number">
               <i class="fa fa-mobile" aria-hidden="true"></i>
               <span>7440</span>
             </div>
-            <div class="header_location">
+
+            <div class="header_location header_btn">
               <span>
-                <i class="fa fa-location" aria-hidden="true"></i>
+                <i class="fa fa-location-arrow" aria-hidden="true"></i>
                 улица Коня, 56
               </span>
               <span>
@@ -54,7 +57,7 @@
                   56 руб.
               </span>
             </div>
-            <div class="header_city">
+            <div class="header_city header_btn">
               <span>Минск</span>
             </div>
         </div>
@@ -80,35 +83,35 @@
           <p class="hero_text_description">Укажите ваше местоположение, чтобы мы смогли предложить вас список доступных ресторанов</p>
         </div>
 
-        <div class="hero_search mobile">
-          <div class="hero_button">Укажите адрес</div>
-        </div>
-
-        <div class="hero_search ">
-          <form>
-              <input class="hero_input" placeholder="Название, кухня или блюдо" />
-              <input type="submit" value="Показать рестораны"/>
+        <div class="hero_adress">
+          <form class="hero_adress_form">
+              <input class="hero_adress_form_input" placeholder="Название, кухня или блюдо" />
+              <input class="hero_adress_form_submit" type="submit" value="Показать рестораны"/>
           </form>
         </div>
+        <div class="hero_adress mobile">
+          <div class="hero_adress_button"><i class="fa fa-location-arrow" aria-hidden="true"></i> Укажите адрес</div>
+        </div>
 
-        <div class="hero_input_container mobile">
+        <!-- <div class="hero_search mobile">
           <input class="hero_input" placeholder="Найти в еде" />
         </div>
 
         <div class="hero_input_container">
           <input class="hero_input" placeholder="Название, кухня или блюдо" />
-        </div>
+        </div> -->
 
       </div>
     </div>
   </section>
+  
 
   <section class="categories">
-    <div class="categories_container">
+    <div class="container">
       <div class="row">
         <div class="categories_list">
-          <div class="categories_item">
-              <a class="categories_item_link" href="/">
+          <div class="categories_item active">
+              <a class="categories_item_link" href="/"></a>
                 <img class="categories_item_img " data-src="/images/category_icons/sushi1.png" alt="" src="/"/>
                 <div class="categories_item_text">Все</div>
               </a>
@@ -151,7 +154,7 @@
   <section class="sales">
     <div class="section_title">
       <div class="container">
-        Акции
+        <h2>Акции</h2>
       </div>
     </div>
     <div class="sales_container container">
@@ -209,7 +212,7 @@
   <section class="restaraunts">
     <div class="section_title">
       <div class="container">
-          Все рестораны
+        <h2>Все рестораны</h2>
       </div>
     </div>
     <div class="restaraunts_container container">

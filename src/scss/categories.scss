@@ -1,52 +1,88 @@
 
 .categories {
-  margin: 20px 0;
+  padding: 20px 0;
   overflow: hidden;
-  text-align: center;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
 
   &_list {
-    top: 15px;
-    position: relative;
+    display: flex;
     overflow-x: auto;
     overflow-y: hidden;
-    margin-top: -15px;
-    padding-bottom: 20px;
     -webkit-overflow-scrolling: touch;
     white-space: nowrap;
   }
 
   &_item {
-    &:first-child {
-      margin-left: 16px;
+    height: 44px;
+    padding: 0 18px;
+    display: block;
+    font-size: 16px;
+    line-height: 44px;
+    margin-right: 4px;
+    border-radius: 100px;
+
+    cursor: pointer;
+    
+    &:hover {
+      background: #f5f5f5;
     }
-    width: 70px;
-    display: inline-block;
-    margin-left: 10px;
-    vertical-align: top;
+
+    &.active {
+      background: rgb(255, 224, 51);
+    }
 
     &_img {
-      width: 70px;
-      height: 70px;
-      border: 1px solid rgba(0,0,0,.05);
-      display: block;
-      transition: all 200ms;
-      border-radius: 20px;
-      background-size: 34px 34px;
-      background-repeat: no-repeat;
-      background-position: center;
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 719px) {
+    margin: 0;
+    padding: 20px 0;
+
+    height: auto;
+    text-align: center;
+
+    &_list {
+      padding-bottom: 20px;
     }
 
-    &_text {
-      color: $light-grey-color;
-      margin-top: 5px;
-      height: 16px;
-      display: block;
-      overflow: hidden;
-      font-size: 13px;
-      text-align: center;
-      white-space: normal;
-      text-overflow: ellipsis;
-      text-decoration: none;
+    &_item {
+      height: auto;
+      padding: 0;
+      margin: 0px 7px;
+
+      &:first-child {
+        margin-left: 16px;
+      }
+
+      &:hover,
+      &.active {
+        background: none;
+      }
+
+      &_img {
+        display: block;
+        width: 70px;
+        height: 70px;
+        border: 1px solid rgba(0,0,0,.05);
+        border-radius: 50%;
+        background: gray;
+      }
+  
+      &_text {
+        color: $light-grey-color;
+        line-height: 1;
+        margin-top: 5px;
+        display: block;
+        overflow: hidden;
+        font-size: 13px;
+        text-align: center;
+        white-space: normal;
+        text-overflow: ellipsis;
+        text-decoration: none;
+      }
     }
   }
 }

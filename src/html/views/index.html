@@ -17,35 +17,35 @@
           <p class="hero_text_description">Укажите ваше местоположение, чтобы мы смогли предложить вас список доступных ресторанов</p>
         </div>
 
-        <div class="hero_search mobile">
-          <div class="hero_button">Укажите адрес</div>
-        </div>
-
-        <div class="hero_search ">
-          <form>
-              <input class="hero_input" placeholder="Название, кухня или блюдо" />
-              <input type="submit" value="Показать рестораны"/>
+        <div class="hero_adress">
+          <form class="hero_adress_form">
+              <input class="hero_adress_form_input" placeholder="Название, кухня или блюдо" />
+              <input class="hero_adress_form_submit" type="submit" value="Показать рестораны"/>
           </form>
         </div>
+        <div class="hero_adress mobile">
+          <div class="hero_adress_button"><i class="fa fa-location-arrow" aria-hidden="true"></i> Укажите адрес</div>
+        </div>
 
-        <div class="hero_input_container mobile">
+        <!-- <div class="hero_search mobile">
           <input class="hero_input" placeholder="Найти в еде" />
         </div>
 
         <div class="hero_input_container">
           <input class="hero_input" placeholder="Название, кухня или блюдо" />
-        </div>
+        </div> -->
 
       </div>
     </div>
   </section>
+  
 
   <section class="categories">
-    <div class="categories_container">
+    <div class="container">
       <div class="row">
         <div class="categories_list">
-          <div class="categories_item">
-              <a class="categories_item_link" href="/">
+          <div class="categories_item active">
+              <a class="categories_item_link" href="/"></a>
                 <img class="categories_item_img " data-src="/images/category_icons/sushi1.png" alt="" src="/"/>
                 <div class="categories_item_text">Все</div>
               </a>
@@ -88,7 +88,7 @@
   <section class="sales">
     <div class="section_title">
       <div class="container">
-        Акции
+        <h2>Акции</h2>
       </div>
     </div>
     <div class="sales_container container">
@@ -146,7 +146,7 @@
   <section class="restaraunts">
     <div class="section_title">
       <div class="container">
-          Все рестораны
+        <h2>Все рестораны</h2>
       </div>
     </div>
     <div class="restaraunts_container container">

@@ -19,3 +19,40 @@ body {
 a {
   color: inherit;
 }
+
+input {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  height: 100% !important;
+  width: 100% !important;
+  margin: 0 !important;
+}
+
+.row {
+  margin-bottom: 0;
+}
+
+.section_title {
+  text-align: left;
+  font-weight: bold;
+  margin: 16px 0 24px;
+
+  & h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  @media screen and (max-width: 719px) {
+    background-color: #F5F4F2;
+    color: $dark-grey-color;
+    margin: 0;
+
+    & h2 {
+      font-size: 13px;
+      padding: 8px 16px;
+      margin: 0;
+    }
+  }
+}
