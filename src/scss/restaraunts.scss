@@ -1,5 +1,37 @@
+.restaraunts {
+  padding: 20px 0;
+  border-bottom: 8px solid #fafafa;
+
+  &_list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px 0;
+
+    & .restaraunt_item {
+      margin-right: 20px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+      width: calc(100% / 3 - 20px);
+
+      @media screen and (max-width: 1030px) {
+        width: calc(50% - 20px);
+      }
+
+      @media screen and (max-width: 650px) {
+        max-width: none;
+        margin-right: 0;
+        width: 100%;
+      }
+    }
+  }
+
+  @media screen and (max-width: 719px) {
+    border-bottom: none;
+  }
+}
 
 .restaraunt_item {
+  max-width: 390px;
 
   &_wrapper {
     height: 185px;
@@ -9,7 +41,7 @@
   }
 
   &_bg {
-    background: grey;
+    background: #cacaca;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50%;
@@ -28,13 +60,22 @@
     padding: 15px;
     width: 100%;
     display: flex;
+    
+    & span {
+      padding: 4px 12px;
+      font-size: 15px;
+    }
 
-    // &_type{
-
-    // }
+    &_type {
+      border-radius: 5px;
+      background: $coral-color;
+    }
 
     &_rate {
       margin-left: auto;
+
+      background: #fff;
+      border-radius: 34px;
     }
   }
 
@@ -44,8 +85,8 @@
       padding: 10px 12px 0 12px;
       overflow: hidden;
       font-size: 21px;
-      line-height: 1;
-      font-weight: 500;
+      line-height: 1.2;
+      font-weight: 600;
       white-space: nowrap;
       text-overflow: ellipsis;
     }
@@ -53,24 +94,23 @@
     &_info {
       padding: 4px 12px 0 12px;
       display: flex;
+      flex-wrap: wrap;
       font-size: 15px;
 
-      &_time {
-        margin-right: 7px;
+      & span {
+        &:after {
+          content: '•';
+          margin: auto auto;
+          padding: 0 4px;
+        }
+        &:last-child:after {
+          content: none;
+        }
       }
-    }
-  }
-}
 
-.restaraunts {
+      &_time {
 
-  &_list {
-    min-height: 150px;
-    padding-top: 20px;
-    margin: 0 16px;
-
-    & .restaraunt_item {
-      height: 265px;
+      }
     }
   }
 }

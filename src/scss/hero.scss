@@ -1,7 +1,7 @@
 .hero {
   padding: 55px 0;
   background: #8c8c8c;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid $borer-light;
 
   &_text {   
     &_title {
@@ -30,20 +30,49 @@
       height: 56px;
 
       &_input {
-        flex: 2;
         padding: 0 35px !important;
         font-size: 18px !important;
         background: white !important;
+        border-top-right-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
+
+        &_wrapper {
+          flex: 2;
+          position: relative;
+
+          &:before {
+            content: "\f124";
+            position: absolute;
+            height: 100%;
+            line-height: 3;
+            left: 10px;
+            font-size: 18px;
+            color:#464646;
+            pointer-events: none;
+          }
+        }
+
+        &_close {
+          position: absolute;
+          right: 10px;
+          height: 100%;
+          line-height: 1.9;
+          font-size: 30px;
+          font-weight: 600;
+          cursor: pointer;
+          user-select: none;
+        }
       }
 
       &_submit {
         flex: 1;
         color: #000000;
-        background: rgb(255, 224, 51);
+        background: $coral-color;
         font-weight: bold;
         padding: 0 24px;
         font-size: 18px !important;
-
+        border-top-left-radius: 0 !important;
+        border-bottom-left-radius: 0 !important;
       }
     }
   }
@@ -95,10 +124,10 @@
       }
 
       &_button {
-        width: 250px;
+        max-width: 250px;
         height: 40px;
         margin: 0 auto;
-        background: $yellow-color;
+        background: $coral-color;
         border-radius: 30px;
         display: flex;
         align-items: center;
@@ -113,31 +142,5 @@
       }
     }
 
-  }
-}
-
-.breadcrumbs {
-  margin: 0 0 5px 3px;
-  color: $light-grey-color;
-  padding-bottom: 6px;
-
-  &_item {
-    position: relative;
-    font-size: 16px;
-
-    &:after {
-      content: " · ";
-    }
-    &:last-child:after {
-      content: none;
-    }
-  }
-
-  @media screen and (max-width: 719px) {
-    margin: 10px 0;
-
-    &_item {
-      font-size: 12px;
-    }
   }
 }

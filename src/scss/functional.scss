@@ -1,0 +1,36 @@
+
+.functional {
+  position: fixed;
+  z-index: 5;
+  left: 0;
+  width: 100%;
+  bottom: 0;
+}
+
+.current_category {
+  top: -64px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  
+  &_text {
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    line-height: 1.2;
+    border-radius: 21px;
+    background: white;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.09);
+
+    & .close {
+      font-size: 22px;
+      margin-left: 5px;
+    }
+  }
+}

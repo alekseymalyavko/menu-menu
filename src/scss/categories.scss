@@ -3,7 +3,7 @@
   padding: 20px 0;
   overflow: hidden;
   text-align: left;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid $borer-light;
 
   &_list {
     display: flex;
@@ -29,7 +29,7 @@
     }
 
     &.active {
-      background: rgb(255, 224, 51);
+      background: $coral-color;
     }
 
     &_img {
@@ -76,6 +76,8 @@
         line-height: 1;
         margin-top: 5px;
         display: block;
+        padding: 3px;
+        border-radius: 10px;
         overflow: hidden;
         font-size: 13px;
         text-align: center;
@@ -83,6 +85,15 @@
         text-overflow: ellipsis;
         text-decoration: none;
       }
+
+      &.active {
+        .categories_item_text {
+          background: $coral-color;
+        }
+      }
+
     }
+
+    
   }
 }

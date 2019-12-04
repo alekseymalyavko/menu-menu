@@ -1,9 +1,9 @@
 $font-stack: -apple-system, BlinkMacSystemFont, Roboto, "Open Sans", "Helvetica Neue", sans-serif;
-$coral-color: #e4424b;
 $white-color: #fff;
-$yellow-color: #fee033;
+$coral-color: #e64049;
 $light-grey-color: silver;
 $dark-grey-color: #75736F;
+$borer-light: #f1f1f1;
 
 @font-face {
   font-family: "Roboto";
@@ -20,6 +20,10 @@ a {
   color: inherit;
 }
 
+img {
+  width: 100%;  
+}
+
 input {
   border: none !important;
   outline: none !important;
@@ -27,6 +31,8 @@ input {
   height: 100% !important;
   width: 100% !important;
   margin: 0 !important;
+  box-sizing: border-box !important;
+  border-radius: 4px !important;
 }
 
 .row {
@@ -51,7 +57,7 @@ input {
 
     & h2 {
       font-size: 13px;
-      padding: 8px 16px;
+      padding: 10px 0px;
       margin: 0;
     }
   }
