@@ -5,9 +5,7 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
-// const jquery = require("jquery");
 const autoprefixer = require('autoprefixer');
-// const tooltipster = require('tooltipster');
 
 function generateHtmlPlugins(templateDir) {
   const templateFiles = fs.readdirSync(path.resolve(__dirname, templateDir));
@@ -85,10 +83,6 @@ const config = {
     ]
   },
   plugins: [
-    // new webpack.ProvidePlugin({
-    //   $: 'jquery',
-    //   jQuery: 'jquery'
-    // }),
     new MiniCssExtractPlugin({
       filename: "./css/style.bundle.css"
     }),

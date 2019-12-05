@@ -2,7 +2,6 @@
   title: "Menu-menu",
 }; %>
 <%= _.template(require('./../includes/header.html').default)(data) %>
-
 <main>
   <section class="hero">
     <div class="hero_container container">
@@ -20,8 +19,20 @@
         <div class="hero_adress">
           <form class="hero_adress_form">
               <div class="hero_adress_form_input_wrapper fa">
-                <input class="hero_adress_form_input" placeholder="Название, кухня или блюдо" />
+                <input class="hero_adress_form_input" placeholder="Укажите адрес доставки..." />
                 <span class="hero_adress_form_input_close">×</span>
+
+                <ul class="hero_adress_form_input_list">
+                  <li class="hero_adress_form_input_list_item">
+                    <span>улица Кирова</span>
+                    <span>Беларусь, Минск</span>
+                  </li>
+                  <li class="hero_adress_form_input_list_item">
+                    <span>улица Кирова</span>
+                    <span>Беларусь, Минск</span>
+                  </li>
+                </ul>
+
               </div>
               <input class="hero_adress_form_submit" type="submit" value="Показать рестораны"/>
           </form>
@@ -99,7 +110,49 @@
     </div>
     <div class="sales_container container">
       <div class="row">
-        <div class="sales_list">
+        <div class="sales_list slick">
+
+          <div class="restaraunt_item">
+            <div class="restaraunt_item_wrapper">
+              <div class="restaraunt_item_bg"></div>
+              <div class="restaraunt_item_options">
+                <span class="restaraunt_item_options_type tooltip" title="123123123"><i class="fa fa-gift" aria-hidden="true"></i></span>
+                <span class="restaraunt_item_options_rate">5.0</span>
+              </div>
+            </div>
+            <div class="restaraunt_item_text">
+              <div class="restaraunt_item_text_title">Название</div>
+              <div class="restaraunt_item_text_info">
+                <span class="restaraunt_item_text_info_time">
+                  ~45мин
+                </span>
+                <span class="restaraunt_item_text_info_cost">
+                  заказ от 0 руб.
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="restaraunt_item">
+            <div class="restaraunt_item_wrapper">
+              <div class="restaraunt_item_bg"></div>
+              <div class="restaraunt_item_options">
+                <span class="restaraunt_item_options_type"><i class="fa fa-gift" aria-hidden="true"></i></span>
+                <span class="restaraunt_item_options_rate">5.0</span>
+              </div>
+            </div>
+            <div class="restaraunt_item_text">
+              <div class="restaraunt_item_text_title">Название</div>
+              <div class="restaraunt_item_text_info">
+                <span class="restaraunt_item_text_info_time">
+                  ~45мин
+                </span>
+                <span class="restaraunt_item_text_info_cost">
+                  заказ от 0 руб.
+                </span>
+              </div>
+            </div>
+          </div>
 
           <div class="restaraunt_item">
             <div class="restaraunt_item_wrapper">

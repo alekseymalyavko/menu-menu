@@ -1,11 +1,17 @@
 
 .header {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  left: 0;
+
   border-bottom: 1px solid $borer-light;
   height: 80px;
   display: flex;
-  position: relative;
   align-items: center;
   flex-direction: row;
+  background: #fff;
 
   & .header_content {
     display: flex;
@@ -21,6 +27,9 @@
 
   &_logo {
     max-width: 180px;
+    & a {
+      display: flex;
+    }
   }
 
   &_btn {
@@ -58,6 +67,51 @@
         border: none;
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
+      }
+    }
+  }
+
+  &_city {
+    position: relative;
+
+    &.active {
+
+      & span {
+        background: #e6e6e6;
+      }
+
+      & .header_city_modal {
+        display: block;
+      }
+    }
+
+    &_modal {
+      display: none;
+
+      position: absolute;
+      top: 100%;
+      right: 0;
+      margin: 0;
+      padding: 10px 0;
+      min-width: 100px;
+      z-index: 9;
+
+      margin-top: 5px;
+      overflow-y: auto;
+      background: #fff;
+      box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.15);
+      border-radius: 4px;
+      max-height: 250px;
+
+      & li {
+        cursor: pointer;
+        padding: 10px 0 10px 15px;
+        position: relative;
+        font-size: 16px;
+
+        &:hover {
+          background: #e6e6e6;
+        }
       }
     }
   }
@@ -124,7 +178,9 @@
     }
   }
 
-
+  &.fixed {
+    box-shadow: 0 0 8px rgba(0,0,0,.8);
+  }
 
   @media screen and (max-width: 719px) {
     height: 60px;

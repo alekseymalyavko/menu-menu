@@ -1,5 +1,5 @@
 .hero {
-  padding: 55px 0;
+  padding: 135px 0 55px;
   background: #8c8c8c;
   border-bottom: 1px solid $borer-light;
 
@@ -28,6 +28,7 @@
     &_form {
       display: flex;
       height: 56px;
+      max-width: 900px;
 
       &_input {
         padding: 0 35px !important;
@@ -56,11 +57,46 @@
           position: absolute;
           right: 10px;
           height: 100%;
-          line-height: 1.9;
+          line-height: 1.8;
           font-size: 30px;
           font-weight: 600;
           cursor: pointer;
           user-select: none;
+        }
+
+        &_list {
+          position: absolute;
+          top: 100%;
+          width: 100%;
+          background: #fff;
+          padding: 10px 0;
+          margin-top: -1px;
+          border-top: 1px solid #e0e0e0;
+          box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.15);
+          z-index: 9;
+
+          &_item {
+            cursor: pointer;
+            padding: 10px 0 10px 20px;
+            font-size: 16px;
+
+            & span {
+              display: block;
+
+              &:first-child {
+                font-size: 18px;
+              }
+
+              &:last-child {
+                margin-top: 5px;
+                color: grey;
+              }
+            }
+
+            &:hover {
+              background: #e6e6e6;
+            }
+          }
         }
       }
 
@@ -95,8 +131,8 @@
   }
 
   @media screen and (max-width: 719px) {
-    padding: 25px 0;
-
+    padding: 95px 0 25px;
+    
     &_text {
       max-width: 220px;
       margin-bottom: 20px;

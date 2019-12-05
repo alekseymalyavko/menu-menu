@@ -37,11 +37,12 @@
 
   &_form {
     height: 45px;
+    max-width: 900px;
 
     &_input {
       border: 1px solid #e8e8e8 !important;
       height: 100%;
-      max-width: 400px;
+      // max-width: 400px;
       padding: 0 35px 0 35px !important;
       box-shadow: none;
 
@@ -91,21 +92,24 @@
     padding: 15px 0;
 
     & .restaraunt_item {
-      flex: 1;
       margin-right: 20px;
+      margin-bottom: 20px;
+      width: calc(100% / 3 - 20px);
+      flex: none;
+
+      @media screen and (max-width: 1030px) {
+        width: calc(50% - 20px);
+      }
+
+      @media screen and (max-width: 650px) {
+        max-width: none;
+        width: 100%;
+      }
     }
   }
 
   @media screen and (max-width: 719px) {
     border-bottom: none;
-
-    &_list {
-
-      & .restaraunt_item {
-        flex: 1;
-        margin-right: 12px;
-      }
-    }
   }
 }
 
