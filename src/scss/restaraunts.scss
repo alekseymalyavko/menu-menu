@@ -8,13 +8,12 @@
     padding: 15px 0;
 
     & .restaraunt_item {
-      margin-right: 20px;
       margin-bottom: 20px;
       flex-wrap: wrap;
-      width: calc(100% / 3 - 20px);
+      width: calc(100% / 3);
 
       @media screen and (max-width: 1030px) {
-        width: calc(50% - 20px);
+        width: 50%;
       }
 
       @media screen and (max-width: 650px) {
@@ -32,6 +31,7 @@
 
 .restaraunt_item {
   max-width: 390px;
+  padding-right: 20px;
 
   &_wrapper {
     height: 185px;
@@ -64,9 +64,11 @@
     & span {
       padding: 4px 12px;
       font-size: 15px;
+      user-select: none;
     }
 
     &_type {
+      cursor: pointer;
       border-radius: 5px;
       background: $coral-color;
     }

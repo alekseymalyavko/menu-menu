@@ -13751,6 +13751,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function() {
+
   jquery__WEBPACK_IMPORTED_MODULE_0___default()(window).scroll(function(){
     var header = jquery__WEBPACK_IMPORTED_MODULE_0___default()('header.header');
     var scroll = jquery__WEBPACK_IMPORTED_MODULE_0___default()(window).scrollTop();
@@ -13758,20 +13759,60 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function() {
     else header.removeClass('fixed');
   });
 
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.header .header_icon').click( function(){
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).closest('.header').find('.header_categories').toggleClass('active')
+  })
 
-  // $('.slick').slick({
-  //   variableWidth: true,
-  //   infinite: false,
-  //   slidesToShow: 3,
-  //   slidesToScroll: 3
-  // });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.header_categories_head_close').click( function() {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).closest('.header_categories').toggleClass('active')
+  })
+
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.header_city.header_btn ').click( function(){
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).toggleClass('active')
+  })
+
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.hero_adress_form_input').on('focus', function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).parent().toggleClass('active')
+  })
+
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.sales_list.slick').slick({
+    // variableWidth: true,
+    // arrows: false,
+    infinite: false,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    prevArrow: '<span class="prev"><span class="slick-button prev">&nbsp;</span></span>',
+    nextArrow: '<span class="next"><span class="slick-button next">&nbsp;</span></span>',
+    responsive: [
+      {
+        breakpoint: 1030,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          arrows: false,
+        }
+      },
+      {
+        breakpoint: 650,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+        }
+      },
+    ]
+  });
   
 
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tooltip').tooltipster({
     trigger: 'click',
-    delay: 200,
-    theme: 'tooltipster-noir'
+    theme: 'tooltipster-noir',
+    functionInit: function(instance, helper){
+      var content = jquery__WEBPACK_IMPORTED_MODULE_0___default()(helper.origin).find('.tooltip_content').detach();
+      instance.content(content);
+    }
   });
+
 });
 
 

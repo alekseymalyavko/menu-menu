@@ -4,6 +4,7 @@
 @import 'categories';
 @import 'restaraunts';
 @import 'functional';
+@import 'tooltip';
 
 .breadcrumbs {
   margin: 0 0 5px 3px;
@@ -86,20 +87,20 @@
   overflow: hidden;
 
   &_list {
-    display: flex;
-    white-space: nowrap;
-    overflow-y: auto;
+    // display: flex;
+    // white-space: nowrap;
+    // overflow-y: auto;
     padding: 15px 0;
 
     & .restaraunt_item {
-      margin-right: 20px;
-      margin-bottom: 20px;
-      width: calc(100% / 3 - 20px);
-      flex: none;
+  //     margin-right: 20px;
+  //     margin-bottom: 20px;
+  //     width: calc(100% / 3 - 20px);
+  //     flex: none;
 
-      @media screen and (max-width: 1030px) {
-        width: calc(50% - 20px);
-      }
+  //     @media screen and (max-width: 1030px) {
+  //       width: calc(50% - 20px);
+  //     }
 
       @media screen and (max-width: 650px) {
         max-width: none;

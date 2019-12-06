@@ -51,13 +51,19 @@
             color:#464646;
             pointer-events: none;
           }
+
+          &.active {
+            & .hero_adress_form_input_list {
+              display: block;
+            }
+          }
         }
 
         &_close {
           position: absolute;
           right: 10px;
           height: 100%;
-          line-height: 1.8;
+          line-height: 1.85;
           font-size: 30px;
           font-weight: 600;
           cursor: pointer;
@@ -65,6 +71,8 @@
         }
 
         &_list {
+          display: none;
+
           position: absolute;
           top: 100%;
           width: 100%;

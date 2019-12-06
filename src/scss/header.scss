@@ -73,6 +73,7 @@
 
   &_city {
     position: relative;
+    user-select: none;
 
     &.active {
 
