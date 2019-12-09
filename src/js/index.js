@@ -29,8 +29,6 @@ $(document).ready(function() {
   })
 
   $('.sales_list.slick').slick({
-    // variableWidth: true,
-    // arrows: false,
     infinite: false,
     slidesToShow: 3,
     slidesToScroll: 3,
@@ -51,6 +49,7 @@ $(document).ready(function() {
           slidesToShow: 1,
           slidesToScroll: 1,
           arrows: false,
+          centerMode: true,
         }
       },
     ]

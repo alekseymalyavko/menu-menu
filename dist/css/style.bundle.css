@@ -484,7 +484,7 @@ input {
       @media screen and (max-width: 650px) {
         .restaraunts_list .restaraunt_item {
           max-width: none;
-          margin-right: 0;
+          padding-right: 0;
           width: 100%; } }
   @media screen and (max-width: 719px) {
     .restaraunts {
@@ -959,6 +959,14 @@ input {
   overflow: hidden; }
   .sales_list {
     padding: 15px 0; }
+    .sales_list .slick-slide {
+      max-width: 390px; }
+    @media screen and (max-width: 650px) {
+      .sales_list .slick-list {
+        padding-left: 0 !important; } }
+    @media screen and (max-width: 1030px) {
+      .sales_list .restaraunt_item {
+        width: 50%; } }
     @media screen and (max-width: 650px) {
       .sales_list .restaraunt_item {
         max-width: none;

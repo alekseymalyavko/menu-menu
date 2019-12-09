@@ -13776,8 +13776,6 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function() {
   })
 
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.sales_list.slick').slick({
-    // variableWidth: true,
-    // arrows: false,
     infinite: false,
     slidesToShow: 3,
     slidesToScroll: 3,
@@ -13798,6 +13796,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function() {
           slidesToShow: 1,
           slidesToScroll: 1,
           arrows: false,
+          centerMode: true,
         }
       },
     ]

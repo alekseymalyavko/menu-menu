@@ -87,20 +87,21 @@
   overflow: hidden;
 
   &_list {
-    // display: flex;
-    // white-space: nowrap;
-    // overflow-y: auto;
     padding: 15px 0;
+    
+    & .slick-slide {
+      max-width: 390px;
+    }
+    & .slick-list {
+      @media screen and (max-width: 650px) {
+        padding-left: 0 !important;
+      }
+    }
 
     & .restaraunt_item {
-  //     margin-right: 20px;
-  //     margin-bottom: 20px;
-  //     width: calc(100% / 3 - 20px);
-  //     flex: none;
-
-  //     @media screen and (max-width: 1030px) {
-  //       width: calc(50% - 20px);
-  //     }
+      @media screen and (max-width: 1030px) {
+        width: 50%;
+      }
 
       @media screen and (max-width: 650px) {
         max-width: none;
