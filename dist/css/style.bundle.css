@@ -797,7 +797,8 @@ input {
     text-align: center;
     font-size: 14px;
     text-decoration: underline;
-    color: #9e9e9e; }
+    color: #9e9e9e;
+    cursor: pointer; }
     .restaraunts_btn:hover {
       color: #000; }
   .restaraunts_list {
