@@ -35,6 +35,10 @@ input {
   border-radius: 4px !important;
 }
 
+body.fixed {
+  overflow: hidden;
+}
+
 .row {
   margin-bottom: 0;
 }
@@ -73,6 +77,10 @@ input {
   &.prev {
     right: auto;
     left: 0;
+  }
+
+  &.slick-disabled {
+    opacity: 0;
   }
 
   .slick-button {

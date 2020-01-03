@@ -13760,11 +13760,13 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function() {
   });
 
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.header .header_icon').click( function(){
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).closest('.header').find('.header_categories').toggleClass('active')
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).closest('.header').find('.header_categories').toggleClass('active');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('body').toggleClass('fixed');
   })
 
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.header_categories_head_close').click( function() {
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).closest('.header_categories').toggleClass('active')
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).closest('.header_categories').toggleClass('active');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('body').toggleClass('fixed');
   })
 
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.header_city.header_btn ').click( function(){

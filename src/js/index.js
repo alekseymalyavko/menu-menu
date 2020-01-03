@@ -13,11 +13,13 @@ $(document).ready(function() {
   });
 
   $('.header .header_icon').click( function(){
-    $(this).closest('.header').find('.header_categories').toggleClass('active')
+    $(this).closest('.header').find('.header_categories').toggleClass('active');
+    $('body').toggleClass('fixed');
   })
 
   $('.header_categories_head_close').click( function() {
-    $(this).closest('.header_categories').toggleClass('active')
+    $(this).closest('.header_categories').toggleClass('active');
+    $('body').toggleClass('fixed');
   })
 
   $('.header_city.header_btn ').click( function(){
