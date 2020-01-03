@@ -1,3 +1,4 @@
+@import 'reset';
 @import 'main';
 @import 'header';
 @import 'hero';
@@ -23,7 +24,7 @@
     }
   }
 
-  @media screen and (max-width: 719px) {
+  @media screen and (max-width: 1024px) {
     margin: 10px 0;
 
     &_item {
@@ -66,7 +67,7 @@
     }
   }
   
-  @media screen and (max-width: 719px) {
+  @media screen and (max-width: 1024px) {
     border-bottom: none;
     
     &_form {
@@ -110,7 +111,7 @@
     }
   }
 
-  @media screen and (max-width: 719px) {
+  @media screen and (max-width: 1024px) {
     border-bottom: none;
   }
 }

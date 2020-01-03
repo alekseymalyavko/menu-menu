@@ -1,7 +1,18 @@
 .restaraunts {
   padding: 20px 0;
   border-bottom: 8px solid #fafafa;
+ 
+  &_btn {
+    text-align: center;
+    font-size: 14px;
+    text-decoration: underline;
+    color: #9e9e9e;
 
+    &:hover {
+      color: #000;
+    }
+  }
+ 
   &_list {
     display: flex;
     flex-wrap: wrap;
@@ -24,7 +35,7 @@
     }
   }
 
-  @media screen and (max-width: 719px) {
+  @media screen and (max-width: 1024px) {
     border-bottom: none;
   }
 }
